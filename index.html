@@ -26,14 +26,30 @@
             padding: 20px;
             border-radius: 10px;
         }
-        img {
+        .favorites-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .favorite-item {
+            margin: 20px;
+            flex: 0 1 200px;
+        }
+        .favorite-item img {
             border-radius: 10px;
+            margin-top: 10px;
+        }
+        .favorite-anime img,
+        .favorite-cars img {
             width: 150px;
-            height: 150px;
-            margin: 10px;
+            height: 225px; /* 2:3 aspect ratio */
+        }
+        .favorite-albums img {
+            width: 150px;
+            height: 150px; /* Square aspect ratio */
         }
         .social-link {
-            color: 1300ff;
+            color: #1300ff;
             text-decoration: none;
             font-weight: bold;
         }
@@ -52,41 +68,60 @@
 
 <section>
     <h2>Favorite Anime</h2>
-    <ul>
-        <li>Jojo Bizzare Adventures (all parts)</li>
-        <img src="https://upload.wikimedia.org/wikipedia/en/a/aa/JoJo_Part_1_Phantom_Blood.jpg">
-        <li>Chainsaw Man</li>
-        <img src="https://upload.wikimedia.org/wikipedia/en/2/24/Chainsawman.jpg" alt="Chainsaw Man">
-        <li>Rascal Does Not Dream of Bunny Girl Senpai</li>
-        <img src="https://m.media-amazon.com/images/M/MV5BZWRjNWY5YmItZTFkNS00ZjdiLWJiMWMtODFjYzk1NjU2MWU0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Rascal Does Not Dream of Bunny Girl Senpai">
-        <li>One Punch Man</li>
-        <img src="https://www.nerdation.in/cdn/shop/files/OPM32.jpg?v=1730539530" alt="One Punch Man">
-        
-    </ul>
+    <div class="favorites-container favorite-anime">
+        <div class="favorite-item">
+            <div>Jojo Bizzare Adventures (all parts)</div>
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/aa/JoJo_Part_1_Phantom_Blood.jpg" alt="Jojo Bizzare Adventures">
+        </div>
+        <div class="favorite-item">
+            <div>Chainsaw Man</div>
+            <img src="https://upload.wikimedia.org/wikipedia/en/2/24/Chainsawman.jpg" alt="Chainsaw Man">
+        </div>
+        <div class="favorite-item">
+            <div>Rascal Does Not Dream of Bunny Girl Senpai</div>
+            <img src="https://m.media-amazon.com/images/M/MV5BZWRjNWY5YmItZTFkNS00ZjdiLWJiMWMtODFjYzk1NjU2MWU0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Rascal Does Not Dream of Bunny Girl Senpai">
+        </div>
+        <div class="favorite-item">
+            <div>One Punch Man</div>
+            <img src="https://www.nerdation.in/cdn/shop/files/OPM32.jpg?v=1730539530" alt="One Punch Man">
+        </div>
+    </div>
 </section>
 
 <section>
     <h2>Favorite Music Albums</h2>
-    <ul>
-        <li>Graduation</li>
-        <img src="https://m.media-amazon.com/images/I/71pxGj4RoVS.jpg" alt="Graduation">
-        <li>Chromokopia</li>
-        <img src="https://i.imgur.com/QZo0NPbb.jpg" alt="Chromokopia">
-        <li>AM</li>
-        <img src="https://i.imgur.com/k87tRma.jpeg" alt="AM">
-        <li>The College Dropout</li>
-        <img src="https://i.imgur.com/BmixcBn.jpeg" alt="The College Dropout">
-    </ul>
+    <div class="favorites-container favorite-albums">
+        <div class="favorite-item">
+            <div>Graduation</div>
+            <img src="https://m.media-amazon.com/images/I/71pxGj4RoVS.jpg" alt="Graduation">
+        </div>
+        <div class="favorite-item">
+            <div>Chromokopia</div>
+            <img src="https://i.imgur.com/QZo0NPbb.jpg" alt="Chromokopia">
+        </div>
+        <div class="favorite-item">
+            <div>AM</div>
+            <img src="https://i.imgur.com/k87tRma.jpeg" alt="AM">
+        </div>
+        <div class="favorite-item">
+            <div>The College Dropout</div>
+            <img src="https://i.imgur.com/BmixcBn.jpeg" alt="The College Dropout">
+        </div>
+    </div>
 </section>
 
 <section>
     <h2>Favorite Cars</h2>
-    <ul>
-        <li>Porsche 911 Turbo S</li>
-        <img src="https://i.pinimg.com/736x/cf/bd/70/cfbd709b964f421f1987e01e144d0745.jpg" alt="Porsche 911 Turbo S">
-        <li>Mazda Miata</li>
-        <img src="https://i.pinimg.com/736x/08/68/68/0868688fd2ad52d96baf9a9d49807381.jpg" alt="Mazda Miata">
-    </ul>
+    <div class="favorites-container favorite-cars">
+        <div class="favorite-item">
+            <div>Porsche 911 Turbo S</div>
+            <img src="https://i.pinimg.com/736x/cf/bd/70/cfbd709b964f421f1987e01e144d0745.jpg" alt="Porsche 911 Turbo S">
+        </div>
+        <div class="favorite-item">
+            <div>Mazda Miata</div>
+            <img src="https://i.pinimg.com/736x/08/68/68/0868688fd2ad52d96baf9a9d49807381.jpg" alt="Mazda Miata">
+        </div>
+    </div>
 </section>
 
 <section>
