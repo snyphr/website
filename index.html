@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DNN7ZVPLDM"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DNN7ZVPLDM"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -86,7 +85,8 @@
         }
 
         .favorite-anime img,
-        .favorite-cars img {
+        .favorite-cars img,
+        .favorite-movies img {
             width: 150px;
             height: 225px;
         }
@@ -115,12 +115,10 @@
     <h1>Welcome to My Personal Website</h1>
 </header>
 
-<!-- Parallax Section -->
 <section class="parallax">
     <h2>Welcome to My Website</h2>
 </section>
 
-<!-- Main Content Sections -->
 <section class="hidden">
     <img src="https://i.pinimg.com/474x/43/b8/f7/43b8f757efbe31ed48e6875165f3ee5d.jpg" alt="My Photo" class="my-photo">
     <p>Hi, I'm Zayd! I'm a fun-loving person who enjoys anime, music, and cars. Here's a little more about me:</p>
@@ -171,6 +169,28 @@
 </section>
 
 <section class="hidden">
+    <h2>Favorite Movies</h2>
+    <div class="favorites-container favorite-movies">
+        <div class="favorite-item">
+            <div>Parasite</div>
+            <img src="https://upload.wikimedia.org/wikipedia/en/5/53/Parasite_%282019_film%29.png" alt="Parasite">
+        </div>
+        <div class="favorite-item">
+            <div>Whiplash</div>
+            <img src="https://upload.wikimedia.org/wikipedia/en/0/05/Whiplash_poster.jpg" alt="Whiplash">
+        </div>
+        <div class="favorite-item">
+            <div>The Dark Knight</div>
+            <img src="https://upload.wikimedia.org/wikipedia/en/8/8a/The_Dark_Knight_poster.jpg" alt="The Dark Knight">
+        </div>
+        <div class="favorite-item">
+            <div>Spirited Away</div>
+            <img src="https://upload.wikimedia.org/wikipedia/en/d/db/Spirited_Away_poster.jpg" alt="Spirited Away">
+        </div>
+    </div>
+</section>
+
+<section class="hidden">
     <h2>Favorite Cars</h2>
     <div class="favorites-container favorite-cars">
         <div class="favorite-item">
@@ -189,7 +209,6 @@
     <p>Follow me on Instagram: <a href="https://www.instagram.com/zayd_3141/" class="social-link">@zayd_3141</a></p>
 </section>
 
-<!-- JavaScript for Scroll Animations -->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     const elements = document.querySelectorAll('.hidden');
